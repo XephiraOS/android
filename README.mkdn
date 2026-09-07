@@ -1,20 +1,26 @@
-LineageOS
-===========
+XephiraOS
+==========
 
 Getting started
 ---------------
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
-To initialize your local repository using the LineageOS trees, use a command like this:
-```
+To get started with XephiraOS (Android 16 / LineageOS 23.2), initialize your local tree using our manifest:
+```bash
 repo init -u https://github.com/XephiraOS/android.git -b lineage-23.2 --git-lfs
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-Then to sync up:
+
+Building for x86_64 Emulator
+----------------------------
+To build the complete XephiraOS x86_64 Android Virtual Device (AVD) image for testing in Android Studio / QEMU:
+```bash
+# Automated build script
+chmod +x build_x86_emulator.sh
+./build_x86_emulator.sh
+
+# Or build and boot immediately:
+./build_x86_emulator.sh --run
 ```
-repo sync
-```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
 
 Submitting patches
