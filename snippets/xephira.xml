@@ -5,8 +5,6 @@
            fetch="https://github.com/XephiraOS"
            review="review.lineageos.org" />
 
-  <include name="default.xml" />
-
   <!-- Remove LineageOS projects replaced by XephiraOS -->
   <remove-project name="LineageOS/android_frameworks_base" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
