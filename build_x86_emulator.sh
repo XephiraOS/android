@@ -11,7 +11,7 @@ repo init -u https://github.com/XephiraOS/android.git -b lineage-23.2 --git-lfs;
 source build/envsetup.sh; \
 
 # 4. Select x86_64 emulator lunch target
-lunch lineage_sdk_phone_x86_64-userdebug; \
+breakfast sdk_phone_x86_64 eng; \
 
 # 5. Start build
-m bacon
+mka
