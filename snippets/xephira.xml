@@ -13,6 +13,7 @@
   <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
   <remove-project name="LineageOS/android_packages_apps_DeskClock" />
   <remove-project name="LineageOS/android_packages_apps_Launcher3" />
+  <remove-project name="LineageOS/android_packages_apps_Dialer" />
 
   <!-- XephiraOS replacements -->
   <project path="frameworks/base"
@@ -54,6 +55,11 @@
            remote="xephira"
            revision="refs/heads/lineage-23.2"
            groups="pdk-fs,sysui-studio,pdk-cw-tvc" />
+
+  <project path="packages/apps/Dialer"
+           name="android_packages_apps_XephiraDialer"
+           remote="xephira"
+           revision="refs/heads/lineage-23.2" />
 
   <!-- XephiraOS new projects -->
   <project path="packages/apps/XephiraLab"
