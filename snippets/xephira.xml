@@ -6,10 +6,12 @@
           revision="lineage-23.2" />
 
   <!-- Remove upstream LineageOS projects -->
+  <remove-project name="LineageOS/android_frameworks_base" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_vendor_lineage" />
 
   <!-- XephiraOS Projects -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="xephira" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="xephira" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="xephira" />
 
