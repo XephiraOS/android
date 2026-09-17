@@ -7,12 +7,28 @@
 
   <!-- Remove upstream LineageOS projects -->
   <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Launcher3" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_vendor_lineage" />
 
-  <!-- XephiraOS Projects -->
+  <!-- Remove unused LineageOS stock apps -->
+  <remove-project name="LineageOS/android_packages_apps_Aperture" />
+  <remove-project name="LineageOS/android_packages_apps_Glimpse" />
+  <remove-project name="LineageOS/android_packages_apps_Jelly" />
+  <remove-project name="LineageOS/android_packages_apps_Recorder" />
+  <remove-project name="LineageOS/android_packages_apps_Seedvault" />
+  <remove-project name="LineageOS/android_packages_apps_Twelve" />
+
+  <!-- XephiraOS Core Projects -->
   <project path="frameworks/base" name="android_frameworks_base" remote="xephira" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="xephira" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="xephira" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="xephira" />
 
+  <!-- XephiraOS GMS & Pixel Packages -->
+  <project path="vendor/gms" name="vendor_gms" remote="xephira" clone-depth="1" />
+  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="xephira" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="xephira" />
+
 </manifest>
+
