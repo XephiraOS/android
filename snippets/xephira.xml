@@ -11,14 +11,6 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_vendor_lineage" />
 
-  <!-- Remove unused LineageOS stock apps -->
-  <remove-project name="LineageOS/android_packages_apps_Aperture" />
-  <remove-project name="LineageOS/android_packages_apps_Glimpse" />
-  <remove-project name="LineageOS/android_packages_apps_Jelly" />
-  <remove-project name="LineageOS/android_packages_apps_Recorder" />
-  <remove-project name="LineageOS/android_packages_apps_Seedvault" />
-  <remove-project name="LineageOS/android_packages_apps_Twelve" />
-
   <!-- XephiraOS Core Projects -->
   <project path="frameworks/base" name="android_frameworks_base" remote="xephira" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="xephira" />
